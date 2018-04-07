@@ -1,0 +1,28 @@
+{
+  "name": "melonplayground",
+  "version": "1.0.0",
+  "description": "Simple playground for melon.js. Minimalistic setup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennazenk/melonplayground.git"
+  },
+  "keywords": ["melon", "ethereum", "blockchain"],
+  "author": "Jenna Zenk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennazenk/melonplayground/issues"
+  },
+  "homepage": "https://github.com/jennazenk/melonplayground#readme",
+  "dependencies": {
+    "@melonproject/melon.js": "^0.7.6"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-preset-env": "*"
+  }
+}
