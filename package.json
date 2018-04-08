@@ -4,13 +4,18 @@
   "description": "Simple playground for melon.js. Minimalistic setup.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "babel-node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jennazenk/melonplayground.git"
   },
-  "keywords": ["melon", "ethereum", "blockchain"],
+  "keywords": [
+    "melon",
+    "ethereum",
+    "blockchain"
+  ],
   "author": "Jenna Zenk",
   "license": "ISC",
   "bugs": {

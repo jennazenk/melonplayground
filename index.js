@@ -27,12 +27,9 @@ import {
 import BigNumber from "bignumber.js";
 
 async function run() {
-  const wallet = importWalletFromMnemonic(
-    "Your mnemonic phrase here"
-  );
+  const wallet = importWalletFromMnemonic("INSERT MNEMONIC");
   trace({
-    message: `Running with wallet address: ${environment.account
-      .address}`
+    message: `Running with wallet address: ${wallet.address}`
   });
   const shared = { etherBalance: {}, participation: {}, melonBalance: {} };
 
@@ -49,7 +46,6 @@ async function run() {
   trace(
     `ProviderType: ${environment.providerType}, quoteAssetSymbol: ${quoteAssetSymbol}, nativeAssetSymbol: ${nativeAssetSymbol}`
   );
-
 
   shared.etherBalance.initial = await environment.api.eth
     .getBalance(environment.account.address)
@@ -69,6 +65,5 @@ async function run() {
       .exchangeAddress} and priceFeed at ${shared.config.priceFeedAddress}`,
     data: shared.config
   });
-
 }
 run();
